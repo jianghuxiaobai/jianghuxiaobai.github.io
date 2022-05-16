@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>蔷薇花 | 客栈</title>
+  <title>关闭Windows自动更新 | 客栈</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -91,7 +91,7 @@
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				  	
-				    <li><a href="/categories/博客/" class="animsition-link">博客<small>(1)</small></a></li>
+				    <li><a href="/categories/博客/" class="animsition-link">博客<small>(2)</small></a></li>
 				    
 				</ul>
         	</li>
@@ -176,111 +176,96 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/qiangWei.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>蔷薇花语</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>美好的爱情，爱的思念，美德。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
+      
 <section id="intro">
     <div class="container">
         <div class="row col-md-offset-2">
             <div class="col-md-8">
-                <h1>蔷薇花</h1>
+    			<span class="post-meta">
+      <time datetime="2022-05-16T02:04:00.000Z" itemprop="datePublished">
+          2022-05-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/系统/'>系统</a>
+    
+    
+</span>
+                <h1>关闭Windows自动更新</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-            
+      		<h2 id="禁用配置自动更新"><a href="#禁用配置自动更新" class="headerlink" title="禁用配置自动更新"></a>禁用配置自动更新</h2><p>同时按键盘上【Windows+R】键，调出运行窗口输入“gpedit.msc”，点击【确定】。<br>确定后弹出【本地策略编辑器】。<br>点击【计算机配置】→【管理模板】→【Windows 组件】→【Windows 更新】→【配置自动更新】。<br>弹出【配置自动更新】窗口，将窗口上面 3 个单项按钮从默认选择的“未配置”改成“已禁用”，点击【确定】即可。<br>关闭 Windows 自动更新后，如果后面需要更新，按照上面的步骤将“已禁用”改成“已启用”就可以了。</p>
+<h2 id="禁用-Windows-Update"><a href="#禁用-Windows-Update" class="headerlink" title="禁用 Windows Update"></a>禁用 Windows Update</h2><p>鼠标右键【此电脑】，点击【管理】进入计算机管理界面，找到【服务和应用程序】，点击后选择【服务】。<br>在众多服务项目中，找到并双击打开【Windows Update】。<br>将启用类型设置为【禁用】即可。</p>
+<h2 id="开启暂停更新"><a href="#开启暂停更新" class="headerlink" title="开启暂停更新"></a>开启暂停更新</h2><p>若是要临时暂停更新，最多只能 35 天，不过在开启之前，打开 Windows 时间设置，关闭【自动设置时间】，并手动【更改日期和时间】，以往后调整 30 年为例。<br>打开【Windows 设置】→【更新设置】→【高级选项】→【开启暂停更新】，这时候系统就会暂停更新至 30 年后了。<br>切记，暂停更新设置完后，记得将系统时间设置回来，不然你可能上不了网哦！</p>
+<p>More info: <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/379186609">原文</a></p>
+
             <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2022/05/13/hello-world/">
+        蔷薇花 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
-<section id="process">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-                <div class="timeline-centered">
-                    <div class="line"></div>
-                    <div class="present">Past</div>
-                    <div class="dot_tp"></div>
-                    <div class="born">Now</div>
-                    <div class="dot_bt"></div>
-                    
-                        <div class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
-                                    <span class="number">1</span>
-                                </div>
-                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
-                                    <p>2014/06/12-Start</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
-                                    <span class="number">2</span>
-                                </div>
-                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
-                                    <p>2014/11/29-XXX</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
-                                    <span class="number">3</span>
-                                </div>
-                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
-                                    <p>2015/02/18-DDD</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
-                                    <span class="number">4</span>
-                                </div>
-                                <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
-                                    <p>More</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-                <!-- timeline-centered -->
-            </div>
-        </div>
-    </div>
-</section>
+
 
       
 <!-- ============================ Footer =========================== -->
