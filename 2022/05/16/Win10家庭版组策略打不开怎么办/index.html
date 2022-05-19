@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2022/5 | 客栈</title>
+  <title>Win10家庭版组策略打不开怎么办 | 客栈</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -176,87 +176,96 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>蔷薇花语</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>美好的爱情，爱的思念，美德。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2022/05/16/Win10家庭版组策略打不开怎么办/">Win10家庭版组策略打不开怎么办</a></h4>
-                            
-                            <p><time datetime="2022-05-16T02:04:00.000Z"><a href="/2022/05/16/Win10家庭版组策略打不开怎么办/">2022-05-16</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2022/05/16/关闭Windows自动更新/">关闭Windows自动更新</a></h4>
-                            
-                            <p><time datetime="2022-05-16T02:04:00.000Z"><a href="/2022/05/16/关闭Windows自动更新/">2022-05-16</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2022/05/13/hello-world/">蔷薇花</a></h4>
-                            
-                            <p><time datetime="2022-05-13T03:34:00.000Z"><a href="/2022/05/13/hello-world/">2022-05-13</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2022-05-16T02:04:00.000Z" itemprop="datePublished">
+          2022-05-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/系统/'>系统</a>
+    
+    
+</span>
+                <h1>Win10家庭版组策略打不开怎么办</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="1-鼠标右键单击桌面，新建–文本文档"><a href="#1-鼠标右键单击桌面，新建–文本文档" class="headerlink" title="1.鼠标右键单击桌面，新建–文本文档"></a>1.鼠标右键单击桌面，新建–文本文档</h2><h2 id="2-打开新建的文本文档，粘贴一下文档内容："><a href="#2-打开新建的文本文档，粘贴一下文档内容：" class="headerlink" title="2.打开新建的文本文档，粘贴一下文档内容："></a>2.打开新建的文本文档，粘贴一下文档内容：</h2><p>@echo off<br>pushd “%<del>dp0”<br>dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package</del>3*.mum &gt;List.txt<br>dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum &gt;&gt;List.txt<br>for &#x2F;f %%i in (‘findstr &#x2F;i . List.txt 2^&gt;nul’) do dism &#x2F;online &#x2F;norestart &#x2F;add-package:”C:\Windows\servicing\Packages%%i”<br>pause</p>
+<h2 id="3-点击文件–保存，关闭文本文档"><a href="#3-点击文件–保存，关闭文本文档" class="headerlink" title="3.点击文件–保存，关闭文本文档"></a>3.点击文件–保存，关闭文本文档</h2><h2 id="4-将文本文档的扩展名由-txt-修改成-cmd，出现扩展名修改提示按确定按钮"><a href="#4-将文本文档的扩展名由-txt-修改成-cmd，出现扩展名修改提示按确定按钮" class="headerlink" title="4.将文本文档的扩展名由 txt 修改成 cmd，出现扩展名修改提示按确定按钮"></a>4.将文本文档的扩展名由 txt 修改成 cmd，出现扩展名修改提示按确定按钮</h2><h2 id="5-鼠标右键单击新建文本文档-cmd-这个文件，选择以管理员身份运行"><a href="#5-鼠标右键单击新建文本文档-cmd-这个文件，选择以管理员身份运行" class="headerlink" title="5.鼠标右键单击新建文本文档.cmd 这个文件，选择以管理员身份运行"></a>5.鼠标右键单击新建文本文档.cmd 这个文件，选择以管理员身份运行</h2><h2 id="6-出现批处理窗口，等待处理完成，按任意键结束并退出-cmd-窗口"><a href="#6-出现批处理窗口，等待处理完成，按任意键结束并退出-cmd-窗口" class="headerlink" title="6.出现批处理窗口，等待处理完成，按任意键结束并退出 cmd 窗口"></a>6.出现批处理窗口，等待处理完成，按任意键结束并退出 cmd 窗口</h2><h2 id="7-重新启动你的计算机，等待系统配置完成，在运行–gpedit-msc-启动组策略，成功"><a href="#7-重新启动你的计算机，等待系统配置完成，在运行–gpedit-msc-启动组策略，成功" class="headerlink" title="7.重新启动你的计算机，等待系统配置完成，在运行–gpedit.msc 启动组策略，成功"></a>7.重新启动你的计算机，等待系统配置完成，在运行–gpedit.msc 启动组策略，成功</h2><p>(后续若需要关闭 win10 自动更新请前往 More info: <a target="_blank" rel="noopener" href="https://jianghuxiaobai.github.io/2022/05/16/%E5%85%B3%E9%97%ADWindows%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/">关闭 Win10 自动更新</a>)</p>
+<p>More info: <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/cdddd41cb0d76f53ca00e144.html">原文</a></p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2022/05/16/%E5%85%B3%E9%97%ADWindows%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/">
+        关闭Windows自动更新 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
